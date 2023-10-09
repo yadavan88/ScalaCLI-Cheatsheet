@@ -6,7 +6,7 @@ For installation of the Scala-CLI, please take a look at the [official documenta
 cs install scala-cli
 ```
 
-Scala-CLI Commands
+## Scala-CLI Commands
 | Command | Description |
 | -- | --|
 | scala-cli Hello.scala | Compiles and runs Hello.scala file |
@@ -19,3 +19,16 @@ Scala-CLI Commands
 | scala-cli --power package Hello.scala -o app | Creates an executable application with name `app` for the file Hello.scala |
 | scala-cli --jvm zulu:21.0.0 Hello.scala | Uses Zulu JDK 21 to execute Hello.scala. It downloads the JDK automatically |
 | scala-cli --jvm 19 Hello.scala | Uses Open JDK 19 to execute Hello.scala |
+
+## Scala-CLI Directives
+Directives are special statements in Scala-CLI. They are added as comments with a special syntax as part of the Scala code. 
+Directives starts with the syntax `//>`. Scala-CLI differentiates them from normal comments and process them in a special way. 
+Here are some of the useful directives:
+
+| Directive | Description |
+| -- | --|
+| //> using scala 3 | This informs Scala-CLI that the following code is written in Scala 3.x version (not 2.x). Hence it uses Scala 3 for the code compilation even though local version of Scala is something else|
+| //> using scala "2.13.12" | Uses the specific version of Scala for the compilation |
+| //> using jvm "19" | Scala-CLI uses JVM 19 (adopt open jdk by default) for compilation and execution |
+| //> using jvm "zulu:21.0.0" | Uses the specific version of the JDK |
+| //> using dep com.lihaoyi::os-lib:0.9.1 | Downloads and brings the os-lib library to the scope so that we can use it
