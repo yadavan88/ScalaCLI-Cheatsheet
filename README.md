@@ -15,7 +15,7 @@ cs install scala-cli
 | scala-cli setup-ide . | Prepares the config files needed to open in IDE. Now we can open in IntelliJ or VSCode+Metals |
 | scala-cli -S 2.13.10 Hello.scala | Compiles and runs Hello.scala using the compiler version 2.13.10. Scala-CLI automatically downloads relevant version |
 | scala-cli fmt Hello.scala | Formats Hello.scala using scalafmt | 
-| scala-cli clean . | Deletes the `.scala-build` directory that contains compiled sources. This doesn't delete IDE config |
+| scala-cli clean . | Delete the `.scala-build` and clean contents of `.bsp` directories that contains compiled sources. Notice that, this deletes IDE config, so you need to do setup-ide again |
 | scala-cli --power package Hello.scala -o app | Creates an executable application with name `app` for the file Hello.scala |
 | scala-cli --jvm zulu:21.0.0 Hello.scala | Uses Zulu JDK 21 to execute Hello.scala. It downloads the JDK automatically |
 | scala-cli --jvm 19 Hello.scala | Uses Open JDK 19 to execute Hello.scala |
