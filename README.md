@@ -32,3 +32,5 @@ Here are some of the useful directives:
 | //> using jvm "19" | Scala-CLI uses JVM 19 (adopt open jdk by default) for compilation and execution |
 | //> using jvm "zulu:21.0.0" | Uses the specific version of the JDK |
 | //> using dep com.lihaoyi::os-lib:0.9.1 | Downloads and brings the os-lib library to the scope so that we can use it
+| //> using javaOpt -Xmx2g | Sets Java Option for the file |
+| //> using option -Xfatal-warnings | Sets Scala Compiler Options |
