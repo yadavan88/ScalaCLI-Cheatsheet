@@ -19,6 +19,8 @@ cs install scala-cli
 | scala-cli --power package Hello.scala -o app | Creates an executable application with name `app` for the file Hello.scala |
 | scala-cli --jvm zulu:21.0.0 Hello.scala | Uses Zulu JDK 21 to execute Hello.scala. It downloads the JDK automatically |
 | scala-cli --jvm 19 Hello.scala | Uses Open JDK 19 to execute Hello.scala |
+| scala-cli repl | Starts a Scala REPL with the default Scala Version |
+| scala-cli repl -S 2.13.12 | Starts the Scala REPL with the specific version |
 
 ## Scala-CLI Directives
 Directives are special statements in Scala-CLI. They are added as comments with a special syntax as part of the Scala code. 
