@@ -36,3 +36,4 @@ Here are some of the useful directives:
 | //> using dep com.lihaoyi::os-lib:0.9.1 | Downloads and brings the os-lib library to the scope so that we can use it
 | //> using javaOpt -Xmx2g | Sets Java Option for the file |
 | //> using option -Xfatal-warnings | Sets Scala Compiler Options |
+| //> using toolkit latest | To use the latest scala toolkit |
