@@ -29,7 +29,8 @@ Here are some of the useful directives:
 
 | Directive | Description |
 | -- | --|
-| //> using scala 3 | This informs Scala-CLI that the following code is written in Scala 3.x version (not 2.x). Hence it uses Scala 3 for the code compilation even though local version of Scala is something else|
+| //> using scala 3 | This informs Scala-CLI that the following code is written in Scala 3.x version (not 2.x). Hence it uses latest Scala 3 for the code compilation even though local version of Scala is something else|
+| //> using scala 3.lts | Uses the LTS version of Scala (e.g. At the moment 3.3.x is the LTS. Eventhough 3.4 is released, this directive uses the LTS 3.3.x version) |
 | //> using scala "2.13.12" | Uses the specific version of Scala for the compilation |
 | //> using jvm "19" | Scala-CLI uses JVM 19 (adopt open jdk by default) for compilation and execution |
 | //> using jvm "zulu:21.0.0" | Uses the specific version of the JDK |
