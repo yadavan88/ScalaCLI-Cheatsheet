@@ -42,5 +42,5 @@ Here are some of the useful directives:
 | //> using option -Xfatal-warnings | Sets Scala Compiler Options |
 | //> using toolkit default | To use the default version scala toolkit. Before v1.1.1, it was using 'latest' instead of 'default' |
 
-**Note 2: ** We can pass the equivalent of the directives to the `scala-cli` command
+**Note** We can pass the equivalent of the directives to the `scala-cli` command
 That means, `//> using dep com.lihaoyi::os-lib:0.10.0` inside a file Hello.scala and running `scala-cli Hello.scala` is equivalent to running `scala-cli Hello.scala --dep com.lihaoyi::os-lib:0.10.0`
