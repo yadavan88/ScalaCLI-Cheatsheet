@@ -6,6 +6,8 @@ For installation of the Scala-CLI, please take a look at the [official documenta
 cs install scala-cli
 ```
 
+**Note:** Since Scala 3.5.0, the `scala` runner uses the `scala-cli` and hence many of the scala-cli commands works with `scala` runner.
+
 ## Scala-CLI Commands
 | Command | Description |
 | -- | --|
@@ -21,6 +23,7 @@ cs install scala-cli
 | scala-cli --jvm 19 Hello.scala | Uses Open JDK 19 to execute Hello.scala |
 | scala-cli repl | Starts a Scala REPL with the default Scala Version |
 | scala-cli repl -S 2.13.12 | Starts the Scala REPL with the specific version |
+| scala-cli --dep com.lihaoyi::os-lib:0.10.0 | Starts the Scala REPL and load os-lib library, so that it can be used directly inside repl |
 
 ## Scala-CLI Directives
 Directives are special statements in Scala-CLI. They are added as comments with a special syntax as part of the Scala code. 
@@ -38,3 +41,6 @@ Here are some of the useful directives:
 | //> using javaOpt -Xmx2g | Sets Java Option for the file |
 | //> using option -Xfatal-warnings | Sets Scala Compiler Options |
 | //> using toolkit default | To use the default version scala toolkit. Before v1.1.1, it was using 'latest' instead of 'default' |
+
+**Note 2: ** We can pass the equivalent of the directives to the `scala-cli` command
+That means, `//> using dep com.lihaoyi::os-lib:0.10.0` inside a file Hello.scala and running `scala-cli Hello.scala` is equivalent to running `scala-cli Hello.scala --dep com.lihaoyi::os-lib:0.10.0`
