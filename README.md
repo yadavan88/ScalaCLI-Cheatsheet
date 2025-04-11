@@ -12,6 +12,7 @@ cs install scala-cli
 | Command | Description |
 | -- | --|
 | scala-cli Hello.scala | Compiles and runs Hello.scala file |
+| scala-cli Hello.scala --dep com.lihaoyi::os-lib:0.10.0 | Passes the os-lib library as a dependency and runs the Hello.scala |
 | scala-cli compile Hello.scala | Compiles Hello.scala file without running |
 | scala-cli run Hello.scala | Runs Hello.scala file (same as scala-cli Hello.scala) |
 | scala-cli setup-ide . | Prepares the config files needed to open in IDE. Now we can open in IntelliJ or VSCode+Metals |
